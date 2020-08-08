@@ -1,0 +1,31 @@
+header {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 6vh;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    min-height: 3vh;
+}
+
+nav a {
+    text-decoration: none;
+}
