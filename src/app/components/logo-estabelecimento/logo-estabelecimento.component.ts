@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-logo-estabelecimento',
@@ -9,7 +9,10 @@ export class LogoEstabelecimentoComponent implements OnInit {
 
   constructor() { }
 
+  @Input() urlLogo: string;
+
   ngOnInit(): void {
+    
   }
 
 }

@@ -1,10 +1,10 @@
 <div id="detalhes-estabelecimentos" class="card">
     <div class="row">
         <app-botao-voltar></app-botao-voltar>
-        <app-logo-estabelecimento></app-logo-estabelecimento>
+        <app-logo-estabelecimento [urlLogo]=estabelecimento.picture></app-logo-estabelecimento>
         <div class="column" id="info-estabelecimento">
-            Subway
-            <span >ID: 14131</span>
+            {{ estabelecimento.name }}
+            <span >ID: {{ estabelecimento.id }}</span>
         </div>
     </div>
     <div class="row">

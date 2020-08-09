@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Estabelecimento } from '../../models/estabelecimento';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-estabelecimento',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardEstabelecimentoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  @Input() estabelecimento: Estabelecimento;
 
   ngOnInit(): void {
+  }
+
+  abrirDetalhesEstabelecimento(): void {
+    this.router.navigate(['/detalhes-estabelecimentos'], { queryParams: { estabelecimento: JSON.stringify(this.estabelecimento) }});
   }
 
 }

@@ -6,7 +6,7 @@ import { EstabelecimentoNaoEncontradoComponent } from './components/estabelecime
 
 const routes: Routes = [
   {path: 'lista-estabelecimentos', component: ListaEstabelecimentosComponent},
-  {path: 'lista-estabelecimentos/detalhes-estabelecimentos', component: DetalhesEstabelecimentosComponent},
+  {path: 'detalhes-estabelecimentos', component: DetalhesEstabelecimentosComponent},
   {path: '', redirectTo: '/lista-estabelecimentos', pathMatch: 'full'},
   {path: '**', component: EstabelecimentoNaoEncontradoComponent}
 ];

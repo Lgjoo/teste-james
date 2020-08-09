@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Estabelecimento } from '../../models/estabelecimento';
+import { ListaEstabelecimentosService } from '../../services/lista-estabelecimentos.service';
 
 @Component({
   selector: 'app-lista-estabelecimentos',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-estabelecimentos.component.css']
 })
 export class ListaEstabelecimentosComponent implements OnInit {
+  estabelecimentos: Estabelecimento[];
 
-  constructor() { }
+  constructor(private listaEstabelecimentosService: ListaEstabelecimentosService) { }
 
   ngOnInit(): void {
+    this.getListaEstabelecimentos();
+  }
+
+  getListaEstabelecimentos(): void {
+    this.listaEstabelecimentosService.getEstabelecimentos().subscribe(
+      estabelecimentos => this.estabelecimentos = estabelecimentos['establishments']
+    );
   }
 
 }

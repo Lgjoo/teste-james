@@ -1,7 +1,7 @@
 <div id="lista-estabelecimentos">
     <ul>
-        <li>
-            <app-card-estabelecimento></app-card-estabelecimento>
+        <li *ngFor="let estabelecimento of estabelecimentos">
+            <app-card-estabelecimento [estabelecimento]="estabelecimento"></app-card-estabelecimento>
         </li>
     </ul>
 </div>

@@ -1,13 +1,13 @@
-<a routerLink="detalhes-estabelecimentos">
+<a (click)="abrirDetalhesEstabelecimento()">
     <div id="card-estabelecimento" class="card">
         <div class="row">
-            <app-logo-estabelecimento></app-logo-estabelecimento>
+            <app-logo-estabelecimento [urlLogo]=estabelecimento.picture></app-logo-estabelecimento>
             <div class="column" id="area-info">
                 <div id="estabelecimento">
-                    Subway<span>14131</span>
+                    {{ estabelecimento.name }}<span>{{ estabelecimento.id }}</span>
                 </div>
                 <div id="endereco">
-                    <span id="cidade">Curitiba</span><span class="separador"></span>R. Reinaldino Schaffenberg de Quadros, 1760 - Alto da XV
+                    <span id="cidade">{{ estabelecimento.name }}</span><span class="separador"></span>{{ estabelecimento.address }}
                 </div>
             </div>
         </div>
