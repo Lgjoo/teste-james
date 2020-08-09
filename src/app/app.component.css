@@ -1,0 +1,8 @@
+main {
+    padding-top: 6vh;
+}
+
+main div {
+    max-width: 75vw;
+    margin: 3vh auto;
+}
