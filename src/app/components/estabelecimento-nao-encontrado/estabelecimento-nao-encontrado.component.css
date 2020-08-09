@@ -1,0 +1,16 @@
+:host {
+    width: 100%;
+}
+
+#estabelecimento-nao-encontrado {
+    padding: 1.5em;
+}
+
+#estabelecimento-nao-encontrado .row {
+    align-items: center;
+}
+
+h3 {
+    color: #4C5164;
+    margin: 0;
+}

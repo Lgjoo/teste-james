@@ -1,0 +1,23 @@
+:host {
+    width: 100%;
+}
+
+#detalhes-estabelecimentos {
+    padding: 1.5em;
+}
+
+#info-estabelecimento {
+    padding: 1em 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: larger;
+    color: #4C5164;
+}
+
+#info-estabelecimento span {
+    color: #81879C;
+    font-weight: 600;
+    font-size: small;
+}

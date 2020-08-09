@@ -8,6 +8,9 @@ import { ListaEstabelecimentosComponent } from './components/lista-estabelecimen
 import { DetalhesEstabelecimentosComponent } from './components/detalhes-estabelecimentos/detalhes-estabelecimentos.component';
 import { EstabelecimentoNaoEncontradoComponent } from './components/estabelecimento-nao-encontrado/estabelecimento-nao-encontrado.component';
 import { CardEstabelecimentoComponent } from './components/card-estabelecimento/card-estabelecimento.component';
+import { BotaoVoltarComponent } from './components/botao-voltar/botao-voltar.component';
+import { LogoEstabelecimentoComponent } from './components/logo-estabelecimento/logo-estabelecimento.component';
+import { TituloSecaoComponent } from './components/titulo-secao/titulo-secao.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { CardEstabelecimentoComponent } from './components/card-estabelecimento/
     ListaEstabelecimentosComponent,
     DetalhesEstabelecimentosComponent,
     EstabelecimentoNaoEncontradoComponent,
-    CardEstabelecimentoComponent
+    CardEstabelecimentoComponent,
+    BotaoVoltarComponent,
+    LogoEstabelecimentoComponent,
+    TituloSecaoComponent
   ],
   imports: [
     BrowserModule,

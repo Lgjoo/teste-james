@@ -1,19 +1,13 @@
 :host{
     width: 100%;
- }
-
-#card-estabelecimento {
-    background-color: #FFF;
-    padding: .3em;
-    border-radius: 5px;
-    box-shadow: 0px 1px 3px -3px #AAA;
 }
 
-#area-logo,
-#area-logo img {
-    height: 70px;
-    width: 70px;
-    border-radius: 3px;
+#card-estabelecimento {
+    padding: .3em;
+}
+
+a {
+    text-decoration: none;
 }
 
 #area-info {
@@ -39,7 +33,7 @@
 
 .separador {
     display: inline-block;
-    border-left: 1px solid #D3D5E0;
+    border-left: 2px solid #D3D5E0;
     height: 10px;
     border-radius: 5px;
     margin: 0 .7em;

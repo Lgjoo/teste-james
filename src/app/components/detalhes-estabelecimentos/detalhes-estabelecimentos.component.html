@@ -1,3 +1,67 @@
-<div id="detalhes-estabelecimentos">
-    
+<div id="detalhes-estabelecimentos" class="card">
+    <div class="row">
+        <app-botao-voltar></app-botao-voltar>
+        <app-logo-estabelecimento></app-logo-estabelecimento>
+        <div class="column" id="info-estabelecimento">
+            Subway
+            <span >ID: 14131</span>
+        </div>
+    </div>
+    <div class="row">
+        <form>
+            <section id="secao-informacoes-basicas">
+                <app-titulo-secao>Informações Básicas</app-titulo-secao>
+                <div id="informacoes-basicas">
+                    <div class="column">
+                        <label>Nome</label>
+                        <input type="text" />
+                    </div>
+                    <div class="column">
+                        <label>Cidade</label>
+                        <input type="text" />
+                    </div>
+                    <div class="column">
+                        <label>Endereço</label>
+                        <input type="text" />
+                    </div>
+                </div>
+            </section>
+            <section id="secao-informacoes-basicas">
+                <app-titulo-secao>Financeiro</app-titulo-secao>
+                <div>
+                    <div class="column">
+                        <label>Banco</label>
+                        <input type="text" />
+                    </div>
+                    <div class="column">
+                        <label>Tipo de conta</label>
+                        <input type="text" />
+                    </div>
+                    <div class="column">
+                        <label>CPF / CNPJ</label>
+                        <input type="text" />
+                    </div>
+                    <div class="column">
+                        <label>Agência</label>
+                        <div class="row">
+                            <input type="text" />
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label>Conta</label>
+                        <div class="row">
+                            <input type="text" />
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label>Saque automático?</label>
+                        <input type="text" />
+                    </div>
+                </div>
+            </section>
+            <button>Salvar</button>
+        </form>
+    </div>
 </div>
