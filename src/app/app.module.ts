@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ListaEstabelecimentosComponent } from './components/lista-estabelecimentos/lista-estabelecimentos.component';
 import { DetalhesEstabelecimentosComponent } from './components/detalhes-estabelecimentos/detalhes-estabelecimentos.component';
 import { EstabelecimentoNaoEncontradoComponent } from './components/estabelecimento-nao-encontrado/estabelecimento-nao-encontrado.component';
+import { CardEstabelecimentoComponent } from './components/card-estabelecimento/card-estabelecimento.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EstabelecimentoNaoEncontradoComponent } from './components/estabelecime
     HeaderComponent,
     ListaEstabelecimentosComponent,
     DetalhesEstabelecimentosComponent,
-    EstabelecimentoNaoEncontradoComponent
+    EstabelecimentoNaoEncontradoComponent,
+    CardEstabelecimentoComponent
   ],
   imports: [
     BrowserModule,
