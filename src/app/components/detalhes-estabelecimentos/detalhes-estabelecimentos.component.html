@@ -8,21 +8,21 @@
         </div>
     </div>
     <div class="row">
-        <form>
+        <form [formGroup]="estabelecimentoForm" (ngSubmit)="salvarInformacoesEstabelecimento()">
             <section id="secao-informacoes-basicas">
                 <app-titulo-secao>Informações Básicas</app-titulo-secao>
                 <div id="informacoes-basicas">
                     <div class="column">
                         <label>Nome</label>
-                        <input type="text" />
+                        <input type="text" formControlName="name" name="name" />
                     </div>
                     <div class="column">
                         <label>Cidade</label>
-                        <input type="text" />
+                        <input type="text" formControlName="cidade" name="cidade" />
                     </div>
                     <div class="column">
                         <label>Endereço</label>
-                        <input type="text" />
+                        <input type="text" formControlName="address" name="address" />
                     </div>
                 </div>
             </section>
@@ -31,37 +31,37 @@
                 <div>
                     <div class="column">
                         <label>Banco</label>
-                        <input type="text" />
+                        <input type="text" formControlName="banco" name="banco" />
                     </div>
                     <div class="column">
                         <label>Tipo de conta</label>
-                        <input type="text" />
+                        <input type="text" formControlName="tipoConta" name="tipoConta" />
                     </div>
                     <div class="column">
                         <label>CPF / CNPJ</label>
-                        <input type="text" />
+                        <input type="text" formControlName="cpfCnpj" name="cpfCnpj" />
                     </div>
                     <div class="column">
                         <label>Agência</label>
                         <div class="row">
-                            <input type="text" />
-                            <input type="text" />
+                            <input type="text" formControlName="agencia" name="agencia" />
+                            <input type="text" formControlName="agenciaDv" name="agenciaDv" />
                         </div>
                     </div>
                     <div class="column">
                         <label>Conta</label>
                         <div class="row">
-                            <input type="text" />
-                            <input type="text" />
+                            <input type="text" formControlName="conta" name="conta" />
+                            <input type="text" formControlName="contaDv" name="contaDv" />
                         </div>
                     </div>
                     <div class="column">
                         <label>Saque automático?</label>
-                        <input type="text" />
+                        <input type="text" formControlName="saqueAutomatico" name="saqueAutomatico" />
                     </div>
                 </div>
             </section>
-            <button>Salvar</button>
+            <button type="submit">Salvar</button>
         </form>
     </div>
 </div>

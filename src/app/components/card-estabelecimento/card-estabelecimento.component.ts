@@ -14,10 +14,20 @@ export class CardEstabelecimentoComponent implements OnInit {
   @Input() estabelecimento: Estabelecimento;
 
   ngOnInit(): void {
+    this.verificaItemSalvo();
   }
 
   abrirDetalhesEstabelecimento(): void {
     this.router.navigate(['/detalhes-estabelecimentos'], { queryParams: { estabelecimento: JSON.stringify(this.estabelecimento) }});
+  }
+
+  verificaItemSalvo() {
+    let itemSalvo = JSON.parse(localStorage.getItem('estabelecimento-'+this.estabelecimento.id));
+    if(itemSalvo) {
+      this.estabelecimento.address = itemSalvo.address;
+      this.estabelecimento.cidade = itemSalvo.cidade;
+      this.estabelecimento.name = itemSalvo.name;
+    }
   }
 
 }
