@@ -22,7 +22,7 @@ No meu caso, utilizei o comando  `ng build --prod --output-path docs --base-href
 
 Para desenvolver este app, primeiramente construi a estrutura em html, de acordo com o layout fornecido, depois meu foco foi deixá-lo funcional, implementando a consulta de estabelecimentos, o salvamento dos dados, utilizando o localstorage, e o roteamento das páginas. E finalmente, após o app estar funcional, realizei ajustes visuais como estilização dos componentes e animações, assim como alguns ajustes no formulário de dados.
 
-Decidi utilizar o indexedDB simplesmente por se tratar de dados sensíveis, precisando de maior segurança no armazenamento, ao contrário do localstorage e sessionstorage.
+Decidi utilizar o localstorage pelos dados serem do formato JSON, o que torna o tratamento deles para o salvamento mais simples, porém, esse método não é seguro para inserção de dados sensíveis, sendo melhor a utilização do indexedDB. A não utilização do indexedDB se dá pela minha falta de conhecimento do mesmo, não sendo possível implementá-lo no tempo que tive, porém irei atrás de entender como funciona para estar preparado pra um próxima vez.
 
 ## Opinião
 
