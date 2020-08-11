@@ -1,27 +1,19 @@
 # TesteJames
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+Esse projeto foi desenvolvido utilizando o Angular CLI v10.0.5.
 
-## Development server
+## Servidor de desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Utilize o comando `ng serve` para iniciar seu servidor de desenvolvimento, o app ficará disponível no endereço `http://localhost:4200/`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Utilize o comando `ng build` para iniciar a construção do app, o resultado será armazenado no diretório `dist/`. Para gerar uma build de produção, utilize o comando com a flag `--prod`.
 
-## Running unit tests
+## Deploy
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Utilize o comando `ng deploy` para realizar o deploy do app.
 
-## Running end-to-end tests
+## Instruções
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+No meu caso, utilizei o comando 
