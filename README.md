@@ -16,11 +16,13 @@ Utilize o comando `ng deploy` para realizar o deploy do app.
 
 ## Instruções
 
-No meu caso, utilizei o comando 
+No meu caso, utilizei o comando  `ng build --prod --output-path docs --base-href /teste-james/` para criar a build do app na pasta docs e fiz o upload para o repositório do git. No git, fui em `settings`, encontrei a sessão do `GitHub Pages`, no campo `source` selecionei a branch `master`, selecionei a pasta `docs` e salvei para gerar o deploy do app. Após algum tempo, o deploy se encontrava disponível no endereço `https://lgjoo.github.io/teste-james/`. 
 
 ## Workflow
 
-Para desenvolver este app, primeiramente construi a estrutura em html, de acordo com o layout fornecido, depois meu foco foi deixá-lo funcional, implementando a consulta de estabelecimentos, o salvamento do dados, utilizando o localstorage, e o roteamento das páginas. E finalmente, após o app estar funcional, realizei ajustes visuais, como estilização dos coomponentes e animações, assim como alguns ajustes no formulário de dados.
+Para desenvolver este app, primeiramente construi a estrutura em html, de acordo com o layout fornecido, depois meu foco foi deixá-lo funcional, implementando a consulta de estabelecimentos, o salvamento dos dados, utilizando o localstorage, e o roteamento das páginas. E finalmente, após o app estar funcional, realizei ajustes visuais como estilização dos componentes e animações, assim como alguns ajustes no formulário de dados.
+
+Decidi utilizar o indexedDB simplesmente por se tratar de dados sensíveis, precisando de maior segurança no armazenamento, ao contrário do localstorage e sessionstorage.
 
 ## Opinião
 
