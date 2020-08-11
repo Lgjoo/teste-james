@@ -28,9 +28,11 @@ nav li {
 
 nav a {
     text-decoration: none;
+    display:inline-block;
 }
 
-nav img {
+nav embed {
     max-width: 10vw;
     height: 5vh;
+    pointer-events: none;
 }
