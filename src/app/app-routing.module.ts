@@ -5,8 +5,8 @@ import { DetalhesEstabelecimentosComponent } from './components/detalhes-estabel
 import { EstabelecimentoNaoEncontradoComponent } from './components/estabelecimento-nao-encontrado/estabelecimento-nao-encontrado.component';
 
 const routes: Routes = [
-  {path: 'lista-estabelecimentos', component: ListaEstabelecimentosComponent},
-  {path: 'detalhes-estabelecimentos', component: DetalhesEstabelecimentosComponent},
+  {path: 'lista-estabelecimentos', component: ListaEstabelecimentosComponent, data: { animation: 'isRight' }},
+  {path: 'detalhes-estabelecimentos', component: DetalhesEstabelecimentosComponent, data: { animation: 'isLeft' }},
   {path: '', redirectTo: '/lista-estabelecimentos', pathMatch: 'full'},
   {path: '**', component: EstabelecimentoNaoEncontradoComponent}
 ];

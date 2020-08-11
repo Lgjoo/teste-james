@@ -1,0 +1,15 @@
+<div id="alerta-background" (click)="fecharAlerta()">
+    <div id="alerta" class="column">
+        <div id="alerta-header">
+            <h3>Alerta</h3>
+        </div>
+        <div id="alerta-corpo" class="column">
+            <div>
+                <p>{{ mensagem }}</p>
+            </div>
+            <div>
+                <button (click)="fecharAlerta()">OK</button>
+            </div>
+        </div>
+    </div>
+</div>

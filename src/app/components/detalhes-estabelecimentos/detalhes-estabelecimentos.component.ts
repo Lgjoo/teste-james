@@ -9,9 +9,7 @@ import { FormGroup, FormBuilder } from  '@angular/forms';
   styleUrls: ['./detalhes-estabelecimentos.component.css']
 })
 /**
- * @TODO: tratar rota com estabelecimento inexistente
  * @TODO: melhorar aviso de salvo
- * @TODO: validação do form
  */
 export class DetalhesEstabelecimentosComponent implements OnInit {
 
@@ -22,6 +20,8 @@ export class DetalhesEstabelecimentosComponent implements OnInit {
   estabelecimento: Estabelecimento;
   estabelecimentoForm: FormGroup;
   possuiItemSalvo: boolean;
+  mostrarAlerta: boolean = false;
+  mensagemAlerta: string = '';
 
   ngOnInit(): void {
     this.carregaInformacoesEstabelecimento();
@@ -78,7 +78,13 @@ export class DetalhesEstabelecimentosComponent implements OnInit {
     }
     localStorage.setItem('estabelecimento-'+this.estabelecimento.id, JSON.stringify(this.estabelecimentoForm.value));
     this.estabelecimento.name = this.estabelecimentoForm.value.name;
-    alert('As informações foram salvas com sucesso!');
+    this.mensagemAlerta = 'As informações foram salvas com sucesso!';
+    this.mostrarAlerta = true;
+  }
+
+  fechaAlerta():void {
+    this.mostrarAlerta = false;
+    this.mensagemAlerta = '';
   }
 
 }

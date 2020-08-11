@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <main>
-  <div>
-    <router-outlet></router-outlet>
+  <div [@routeAnimations]="preparaRota(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
   </div>
 </main>

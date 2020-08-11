@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ListaEstabelecimentosComponent } from './components/lista-estabelecimentos/lista-estabelecimentos.component';
@@ -14,6 +15,7 @@ import { BotaoVoltarComponent } from './components/botao-voltar/botao-voltar.com
 import { LogoEstabelecimentoComponent } from './components/logo-estabelecimento/logo-estabelecimento.component';
 import { TituloSecaoComponent } from './components/titulo-secao/titulo-secao.component';
 import { CpfCnpjDirective } from './directives/cpf-cnpj.directive';
+import { AlertaComponent } from './components/alerta/alerta.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,16 @@ import { CpfCnpjDirective } from './directives/cpf-cnpj.directive';
     BotaoVoltarComponent,
     LogoEstabelecimentoComponent,
     TituloSecaoComponent,
-    CpfCnpjDirective
+    CpfCnpjDirective,
+    AlertaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
