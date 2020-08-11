@@ -22,8 +22,21 @@ export class DetalhesEstabelecimentosComponent implements OnInit {
   possuiItemSalvo: boolean;
   mostrarAlerta: boolean = false;
   mensagemAlerta: string = '';
+  indexedDb = indexedDB.open("bancoJames", 1);
 
   ngOnInit(): void {
+    this.indexedDb.onupgradeneeded = function(event) {
+      //fazer a criação das tabelas, indices e popular o banco se necessário
+    }
+
+    this.indexedDb.onsuccess = function (event) { 
+      //sucesso ao criar/abrir o banco de dados
+    }
+
+    this.indexedDb.onerror = function (event) { 
+      //erro ao criar/abrir o banco de dados
+    }
+    
     this.carregaInformacoesEstabelecimento();
   }
 
