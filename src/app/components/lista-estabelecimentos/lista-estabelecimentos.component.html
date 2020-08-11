@@ -1,5 +1,12 @@
 <div id="lista-estabelecimentos">
-    <ul>
+    <div class="card" *ngIf="carregandoLista">
+        <div class="loader"></div>
+        Carregando lista
+    </div>
+    <div class="card" *ngIf="!carregandoLista && estabelecimentos.length == 0">
+        Nenhum estabelecimento cadastrado.
+    </div>
+    <ul *ngIf="!carregandoLista && estabelecimentos.length > 0">
         <li *ngFor="let estabelecimento of estabelecimentos">
             <app-card-estabelecimento [estabelecimento]="estabelecimento"></app-card-estabelecimento>
         </li>

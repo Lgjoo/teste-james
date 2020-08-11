@@ -10,6 +10,12 @@ a {
     text-decoration: none;
 }
 
+a:hover #card-estabelecimento {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 2px #D3D5E0;
+    transition: 0.2s ease-in-out;
+}
+
 #area-info {
     padding: 0em 1.5em;
     justify-content: space-around;
@@ -17,8 +23,11 @@ a {
 
 #estabelecimento {
     font-weight: 600;
-    font-size: larger;
+    font-size: large;
     color: #4C5164;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #estabelecimento span {

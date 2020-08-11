@@ -13,6 +13,7 @@ import { CardEstabelecimentoComponent } from './components/card-estabelecimento/
 import { BotaoVoltarComponent } from './components/botao-voltar/botao-voltar.component';
 import { LogoEstabelecimentoComponent } from './components/logo-estabelecimento/logo-estabelecimento.component';
 import { TituloSecaoComponent } from './components/titulo-secao/titulo-secao.component';
+import { CpfCnpjDirective } from './directives/cpf-cnpj.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TituloSecaoComponent } from './components/titulo-secao/titulo-secao.com
     CardEstabelecimentoComponent,
     BotaoVoltarComponent,
     LogoEstabelecimentoComponent,
-    TituloSecaoComponent
+    TituloSecaoComponent,
+    CpfCnpjDirective
   ],
   imports: [
     BrowserModule,

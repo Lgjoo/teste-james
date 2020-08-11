@@ -6,3 +6,19 @@
 #botao-voltar {
     padding-right: 1.5em;
 }
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 50px;
+    color: #363840;
+}
+
+a:hover {
+    background-color: #363840;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+}

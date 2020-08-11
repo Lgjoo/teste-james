@@ -9,6 +9,7 @@ import { ListaEstabelecimentosService } from '../../services/lista-estabelecimen
 })
 export class ListaEstabelecimentosComponent implements OnInit {
   estabelecimentos: Estabelecimento[];
+  carregandoLista: boolean = true;
 
   constructor(private listaEstabelecimentosService: ListaEstabelecimentosService) { }
 
@@ -18,7 +19,10 @@ export class ListaEstabelecimentosComponent implements OnInit {
 
   getListaEstabelecimentos(): void {
     this.listaEstabelecimentosService.getEstabelecimentos().subscribe(
-      estabelecimentos => this.estabelecimentos = estabelecimentos['establishments']
+      estabelecimentos => {
+        this.estabelecimentos = estabelecimentos['establishments'];
+        this.carregandoLista = false;
+      }
     );
   }
 

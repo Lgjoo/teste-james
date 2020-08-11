@@ -77,6 +77,7 @@ export class DetalhesEstabelecimentosComponent implements OnInit {
       localStorage.removeItem('estabelecimento-'+this.estabelecimento.id);
     }
     localStorage.setItem('estabelecimento-'+this.estabelecimento.id, JSON.stringify(this.estabelecimentoForm.value));
+    this.estabelecimento.name = this.estabelecimentoForm.value.name;
     alert('As informações foram salvas com sucesso!');
   }
 

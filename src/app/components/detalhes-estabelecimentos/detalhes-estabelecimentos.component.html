@@ -11,7 +11,7 @@
         <form [formGroup]="estabelecimentoForm" (ngSubmit)="salvarInformacoesEstabelecimento()">
             <section id="secao-informacoes-basicas">
                 <app-titulo-secao>Informações Básicas</app-titulo-secao>
-                <div id="informacoes-basicas">
+                <div id="informacoes-basicas" class="inputs-secao">
                     <div class="column">
                         <label>Nome</label>
                         <input type="text" formControlName="name" name="name" />
@@ -28,36 +28,46 @@
             </section>
             <section id="secao-informacoes-basicas">
                 <app-titulo-secao>Financeiro</app-titulo-secao>
-                <div>
+                <div id="financeiro" class="inputs-secao">
                     <div class="column">
                         <label>Banco</label>
-                        <input type="text" formControlName="banco" name="banco" />
+                        <select type="text" formControlName="banco" name="banco">
+                            <option value="bancoBrasil">Banco do Brasil</option>
+                            <option value="santander">Santander</option>
+                            <option value="nubank">Nubank</option>
+                        </select>
                     </div>
                     <div class="column">
                         <label>Tipo de conta</label>
-                        <input type="text" formControlName="tipoConta" name="tipoConta" />
+                        <select type="text" formControlName="tipoConta" name="tipoConta">
+                            <option value="contaCorrente">Conta corrente</option>
+                            <option value="poupanca">Poupança</option>
+                        </select>
                     </div>
                     <div class="column">
                         <label>CPF / CNPJ</label>
-                        <input type="text" formControlName="cpfCnpj" name="cpfCnpj" />
+                        <input type="text" formControlName="cpfCnpj" name="cpfCnpj" appCpfCnpj />
                     </div>
                     <div class="column">
                         <label>Agência</label>
                         <div class="row">
-                            <input type="text" formControlName="agencia" name="agencia" />
-                            <input type="text" formControlName="agenciaDv" name="agenciaDv" />
+                            <input type="text" formControlName="agencia" name="agencia" maxlength="6" minlength="4" />
+                            <input type="text" formControlName="agenciaDv" name="agenciaDv" maxlength="1" />
                         </div>
                     </div>
                     <div class="column">
                         <label>Conta</label>
                         <div class="row">
-                            <input type="text" formControlName="conta" name="conta" />
-                            <input type="text" formControlName="contaDv" name="contaDv" />
+                            <input type="text" formControlName="conta" name="conta" maxlength="8" minlength="4" />
+                            <input type="text" formControlName="contaDv" name="contaDv" maxlength="1" />
                         </div>
                     </div>
                     <div class="column">
                         <label>Saque automático?</label>
-                        <input type="text" formControlName="saqueAutomatico" name="saqueAutomatico" />
+                        <select type="text" formControlName="saqueAutomatico" name="saqueAutomatico">
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
                     </div>
                 </div>
             </section>

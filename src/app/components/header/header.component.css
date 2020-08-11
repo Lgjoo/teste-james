@@ -29,3 +29,8 @@ nav li {
 nav a {
     text-decoration: none;
 }
+
+nav img {
+    max-width: 10vw;
+    height: 6vh;
+}
